@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+img{
+    max-width: 100%;
+}
+li{
+    list-style: none;
+}
+.body{
+    font-family: 'Open Sans', sans-serif;
+}
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+.col-6{
+    width: 50%;
+
+}
+.header{
+    background: #0a121f;
+    padding: 24px 0;
+    color: white;
+}
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-logo{
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 31px;
+    color: #3A68B8;
+    margin-right: 84px;
+}
+.header-logo svg{
+    margin-right: 15px;
+}
+.header-link:not(:last-child){
+    margin-right: 40px;
+}
+.btn{
+    padding: 15px 30px;
+    background: #3A68B8;
+    border-radius: 5px;
+    display: inline-block;
+    line-height: 22px;
+
+}
+.header-left-side{
+    display: flex;
+    align-items: center;
+}
+.hero{
+    background: #0a121e url("../image/9 1.png") no-repeat right/contain;
+}
+.hero-container{
+    display: flex;
+    align-items: center;
+    min-height: calc(100vh - 99px);
+}
+.hero-box{
+    width: 50%;
+}
+.hero-box-title{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 160%;
+    text-transform: uppercase;
+    color: #3A68B8;
+}
+.hero-heading{
+    font-weight: 800;
+    font-size: 55px;
+    line-height: 130%;
+    color: #FFFFFF;
+}
+.hero-desc{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 160%;
+    color: #FFFFFF;
+    opacity: 0.7;
+    margin: 40px 0 50px;
+}
+.hero-btns{
+    display: flex;
+}
+.hero-btn{
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: #FFFFFF;
+}
+.hero-btn:nth-child(1){
+    margin-right: 20px;
+}
+.hero-btn svg{
+    margin-right: 10px;
+}
+.logos{
+    background-color: #0a121f;
+    padding: 90px 0 99px;
+}
+.logo-tech{
+    display: flex;
+}
+.logo-tech svg:not(:last-child){
+    margin-right: 71px;
+}
+.modal-wrapper{
+    position: fixed;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: #0009;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.modal{
+    padding: 30px;
+    background: white;
+    width: 600px;
+    position: relative;
+}
+.modal-close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 25px;
+}
+.modal-wrapper.show{
+    display: flex;
+}
